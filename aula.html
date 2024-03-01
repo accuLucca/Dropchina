@@ -8,22 +8,73 @@
 <style>
     body {
         background-color: #000000;
+        margin: 0px;
+        cursor: crosshair;
     }
-    img {
-        width: 180px; height: 180px;
-        margin: auto; 
-        display: block;
-        border-radius: 55%;
+    .box {
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+    width: 100vw;
+    height: 100vh;
+    }
+    .panda {
+        display:flexbox;
+        flex-direction: row;
+        justify-content:center;
+        align-items: center;
+        height: 300px;
+        width: 300px;
+        background-color: rgb(186, 183, 183);
+        border-radius: 10px;
+    }
+    .panda img {
+        width: 125px;
+        height: 125px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-left: 88px;
+        border-radius: 5px;
+    }
+    .texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; 
+}
+    input {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+    button {
+        width: 100px;
+        padding: 5px;
+        border: 2px solid #ccc; 
+        border-radius: 10px;
+        font-weight: bold;
+    }
+    button:hover {
+      background-color:#002ead;
+      color: white;
+      cursor: pointer;
+      transition: 0.7s;
+      border: 2px white solid;
+  }
 </style>
 <body>
-    <div>
-        <img src="img/iphone20.webp" alt="">
-        <br>
-        <img src="img/pandaship.jpeg" alt="">
-        <br>
-        <img src="img/pesquisa.png" alt="">
-        <br>
-        <img src="img/ps10.webp" alt="">
+    <div class="box">
+        <div class="panda">
+            <img src="img/pandaship.jpeg">
+            <div class="texto">
+                <input type="text" placeholder="Login"/>
+                <input type="text" placeholder="Senha"/>
+                <button>Entrar</button>
+            </div>
+        </div>
     </div>
 </body>
 </html>
