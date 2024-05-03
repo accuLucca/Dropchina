@@ -63,11 +63,12 @@ nav a {
 
 .sobre-nos h2 {
     text-align: center;
-    margin-bottom: 20px;
 }
-
+.sobre-nos h3 {
+    text-align: center;
+}
 .sobre-nos p {
-    text-align: justify;
+    text-align: center;
 }
 
 .equipe {

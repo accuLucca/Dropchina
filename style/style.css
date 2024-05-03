@@ -10,8 +10,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 300%;
 }
-
 header img {
     width: 100px;
 }
