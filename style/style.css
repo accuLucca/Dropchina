@@ -45,6 +45,9 @@ nav a {
     color: #fff;
     text-decoration: none;
 }
+h2 {
+    font-size: 35px;
+}
 
 .produtos {
     padding: 20px;
